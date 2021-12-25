@@ -27,7 +27,7 @@ class AssetsCollectionsViewController: UICollectionViewController {
         {
             let headerView = self.collectionView.visibleSupplementaryViews(ofKind: UICollectionView.elementKindSectionHeader).first
 
-            (headerView as! AssetsCollectionsHeaderView).balanceLabel.text = "\(self.balance) wei"
+            (headerView as? AssetsCollectionsHeaderView)?.balanceLabel.text = "\(self.balance) wei"
         }
     }
     
